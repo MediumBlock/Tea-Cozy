@@ -1,0 +1,133 @@
+
+
+/* 1. Global Styles
+======================================== */
+
+* {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  z-index: 1;
+  border: 1px solid white;
+}
+
+
+
+
+
+
+/* 2. Typography Styles
+======================================== */
+
+h2 {
+  font-size: 34px;
+}
+
+
+
+
+
+/* 3. Structure Styles
+======================================== */
+.background-img {
+  background-image: url("Resources/img-mission-background.webp");
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+  z-index: 0;
+}
+
+.container-totm {
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+  width: 1000px;
+  align-content: flex-start;
+}
+
+.container-img-showcase {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.container-img-showcase img {
+  height: 200px;
+  width: 300px;
+}
+
+
+/* 4. Modules Styles
+======================================== */
+
+
+
+/* 5. Component Styles
+======================================== */
+
+
+#logo img {
+  max-height: 50px;
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+nav {
+  margin: 0 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+
+.container {
+  width: 100%;
+}
+
+.mission {
+  position: relative;
+  top: 265px;
+  padding:  0;
+  opacity: 1;
+}
+
+.mission h2 {
+  padding-top: 10px;
+}
+
+.mission h4 {
+  padding-bottom: 10px;
+}
+
+
+
+
+/* 6. Page Styles
+======================================== */
+
+.header {
+  height: 69px;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+}
+
