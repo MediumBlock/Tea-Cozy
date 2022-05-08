@@ -11,7 +11,15 @@
   opacity: 0.9;
   text-align: center;
   z-index: 1;
-  border: 1px solid white;
+}
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
 }
 
 
@@ -26,13 +34,19 @@ h2 {
   font-size: 34px;
 }
 
+h3 {
+  font-size: 28px;
+}
 
+h6 {
+  font-size: 18px;
+}
 
 
 
 /* 3. Structure Styles
 ======================================== */
-.background-img {
+.background-img-main {
   background-image: url("Resources/img-mission-background.webp");
   height: 700px;
   width: 1200px;
@@ -42,17 +56,44 @@ h2 {
   z-index: 0;
 }
 
+.background-img-loc {
+  background-image: url("Resources/img-locations-background.webp");
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  z-index: 0;
+  background-color: transparent;
+}
+
 .container-totm {
   position: relative;
   top: 70px;
   margin: 0 auto;
   width: 1000px;
-  align-content: flex-start;
 }
+
+.container-totm h4 {
+  margin-top: 20px;
+}
+
+.container-loc {
+  background-color: transparent;
+}
+
+.background-img-loc h2 {
+  position: relative;
+  top: 80px;
+  background-color: transparent;
+}
+
+
 
 .container-img-showcase {
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
 }
 
 .container-img-showcase img {
@@ -60,6 +101,36 @@ h2 {
   width: 300px;
 }
 
+.container-img-showcase figure {
+  margin-right: 33px;
+  margin-top: 30px;
+}
+
+.container-img-showcase figcaption {
+  margin-top: 10px;
+}
+
+.container-loc {
+  display: inline-flex;
+  position: relative;
+  top: 95px;
+}
+
+.container-loc-indv {
+  width: 300px;
+  opacity: 1;
+  margin-right: 40px;
+}
+
+.container-loc-indv h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.container-loc-indv h3 {
+  margin-top: 20px;
+
+}
 
 /* 4. Modules Styles
 ======================================== */
@@ -77,7 +148,7 @@ h2 {
 }
 
 nav {
-  margin: 0 10px;
+  margin: 22px 10px 0 0;
 }
 
 nav ul li {
@@ -131,3 +202,25 @@ nav ul li {
   top: 0;
 }
 
+footer {
+  background-color: transparent;
+}
+
+.footer-close {
+  height: 200px;
+  position: relative;
+  top: 135px;
+  background-color: transparent;
+}
+
+.footer-close h5 {
+  margin-top: 40px;
+}
+
+.footer-cpy {
+  margin-left: 20px;
+  float: left;
+  position: relative;
+  top: 200px;
+  padding-bottom: 20px;
+}
